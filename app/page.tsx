@@ -2,7 +2,7 @@
 import Head from "next/head";
 import Nav from "@/components/Nav";
 import ExpCard from "@/components/ExpCards";
-import Projects from "@/components/Projects";
+import Publications from "@/components/Publications";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -42,9 +42,9 @@ export default function Home() {
         <div className="lg:flex lg:justify-between lg:gap-4">
           <Nav />
           <main className="flex flex-col pt-6 lg:pt-24 lg:w-1/2 lg:py-24 gap-8">
-            <About />
+	  {/*<About />*/}
+            <Publications />
             <ExpCard />
-            <Projects />
             <Contact />
             <Footer />
           </main>

@@ -20,7 +20,7 @@ export default function Nav() {
 
   const navItems: NavItem[] = [
     { name: "About", href: "#about" },
-    { name: "Experience", href: "#experience" },
+    { name: "Eperience", href: "#experience" },
     { name: "Projects", href: "#projects" },
     { name: "Contact", href: "#contact" },
   ];
@@ -46,25 +46,42 @@ export default function Nav() {
     <header className="lg:sticky lg:top-0 lg:flex lg:max-h-screen lg:w-1/2 lg:flex-col lg:justify-between lg:py-24 flex flex-col lg:gap-4">
       <div className="flex flex-col gap-4 lg:pr-24 mt-6 lg:mt-0">
         <div className="w-full flex lg:items-center lg:justify-start">
-          <Avatar className="w-24 lg:w-36 h-auto border-2 border-primary bg-secondary">
-            <AvatarImage src="./avatar.png" />
-            <AvatarFallback className="w-24 h-24 lg:w-36 lg:h-36 rounded-full border-1 border-primary">
-              AM
-            </AvatarFallback>
+          <Avatar className="w-32 lg:w-48 h-auto border-2 border-primary bg-secondary">
+            <AvatarImage src="./headshot.png" />
           </Avatar>
         </div>
         <h1 className="text-[42px] font-bold lg:text-start">
-          Hi, i&#39;m Alexander 👋
+	  Muhammed Shuaibi
         </h1>
         <h2 className="text-xl lg:text-start">
-          Product designer, developer, founder.
+	  Research Engineer, FAIR at Meta
         </h2>
-        <p className="text-lg lg:text-start text-muted-foreground">
-          I help innovative startups in AI, Web3, and Finance craft exceptional
-          user experiences, translating complex technologies into intuitive
-          interfaces that resonate with humans.
-        </p>
+        <p className="text-md text-muted-foreground">
+	I am a Research Engineer on the FAIR Chemistry team. My research focuses on the development of datasets, models, and frameworks
+	to help address broad challenges in molecules and materials discovery. Before that, I completed my PhD in Chemical Engineering with
+	Zachary Ulissi.
+	</p>
       </div>
+      <ul className="flex flex-row gap-6 mt-6 lg:mt-0">
+        <Button variant="outline" size="icon">
+          <a
+            href="https://github.com/mshuaibii"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Github className="h-[1.2rem] w-[1.2rem]" />
+          </a>
+        </Button>
+        <Button variant="outline" size="icon">
+          <a
+            href="https://linkedin.com/in/mshuaibii"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Linkedin className="h-[1.2rem] w-[1.2rem]" />
+          </a>
+        </Button>
+      </ul>
       <nav className="lg:flex hidden">
         <ul className="flex flex-col w-max text-start gap-6 uppercase text-xs font-medium">
           {navItems.map((item: NavItem) => {
@@ -82,27 +99,6 @@ export default function Nav() {
           })}
         </ul>
       </nav>
-      <ul className="flex flex-row gap-6 mt-6 lg:mt-0">
-        <Button variant="outline" size="icon">
-          <a
-            href="https://github.com/0xAlexander"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Github className="h-[1.2rem] w-[1.2rem]" />
-          </a>
-        </Button>
-        <Button variant="outline" size="icon">
-          <a
-            href="https://linkedin.com/in/0xAlexander"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Linkedin className="h-[1.2rem] w-[1.2rem]" />
-          </a>
-        </Button>
-        <ModeToggle />
-      </ul>
     </header>
   );
 }
