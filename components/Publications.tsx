@@ -12,18 +12,18 @@ import { MoveUpRight } from "lucide-react";
 
 const jobProjects = [
   {
-    imagePath: "/vela.avif",
-    title: "Vela Exchange - Product Design",
+    imagePath: "/OMol25.png",
+    title: "The Open Molecules 2025 (OMol25) Dataset, Evaluations, and Models",
     description: "",
     skills: [],
-    link: "https://vela.exchange",
+    links: "",
   },
   {
-    imagePath: "/l3x.avif",
-    title: "L3X Network - Founding Product Design",
+    imagePath: "/UMA.png",
+    title: "UMA: A Family of Universal Models for Atoms",
     description: "",
     skills: [],
-    link: "https://l3x.com",
+    link: "",
   },
 ];
 

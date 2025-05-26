@@ -7,32 +7,21 @@ import { Analytics } from "@vercel/analytics/react";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://meikopoulos.com"),
+  metadataBase: new URL("https://mshuaibi.com"),
   alternates: {
-    canonical: "https://meikopoulos.com",
+    canonical: "https://mshuaibi.com"
   },
-  title: "Alexander Meikopoulos - Product Designer in AI, Web3, and Finance",
-  description:
-    "Alexander Meikopoulos is a Product designer, developer & founder.",
-  keywords:
-    "Alexander Meikopoulos, Product Designer, AI, Web3, Finance, User Experience, UI/UX Design, Design Systems, Front-end Development, Decentralized Finance, DeFi, Swoop Exchange, Vela Exchange, Stealth AI Startup, Technology, Innovation, Human-Centered Design",
+  title: "Muhammed Shuaibi",
+  description: "",
+  keywords: "",
   openGraph: {
     locale: "en_US",
-    siteName: "Alexander Meikopoulos",
+    siteName: "Muhammed Shuaibi",
     type: "website",
-    title: "Alexander Meikopoulos",
-    description:
-      "Alexander Meikopoulos is a Product designer, developer & founder.",
-    url: "https://meikopoulos.com",
-    images: [
-      {
-        url: "./og-large-meik-2.jpg",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Alexander Meikopoulos",
+    title: "Muhammed Shuaibi",
+    description: "",
+    url: "https://mshuaibi.com",
+    images: [],
   },
 };
 
@@ -46,7 +35,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
-          defaultTheme="dark"
+          defaultTheme="base"
           enableSystem
           disableTransitionOnChange
         >
