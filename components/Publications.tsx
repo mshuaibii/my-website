@@ -10,29 +10,33 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { MoveUpRight } from "lucide-react";
 
-const jobProjects = [
-  {
-    imagePath: "/OMol25.png",
-    title: "The Open Molecules 2025 (OMol25) Dataset, Evaluations, and Models",
-    description: "",
-    skills: ["Paper", "Code"],
-    link: "https://arxiv.org/abs/2505.08762",
-  },
+const selPublications = [
   {
     imagePath: "/UMA.png",
     title: "UMA: A Family of Universal Models for Atoms",
-    description: "",
-    skills: ["Paper", "Code"],
-    link: "",
+    description: "Brandon M Wood*, Misko Dzamba*, Xiang Fu*, Meng Gao*, Muhammed Shuaibi*, Luis Barroso Luque, Kareem Abdelmaqsoud, Vahe Gharakhanyan, John R Kitchin, Daniel S Levine, Kyle Michel, Anuroop Sriram, Taco Cohen, Abhishek Das, Ammar Rizvi, Sushree Jagriti Sahoo, Zachary W Ulissi, C Lawrence Zitnick",
+    skills: [
+	    { name: "Models", url: "https://huggingface.co/facebook/UMA" }
+    ],
+    link: "https://ai.meta.com/research/publications/uma-a-family-of-universal-models-for-atoms/",
+  },
+  {
+    imagePath: "/OMol25.png",
+    title: "The Open Molecules 2025 (OMol25) Dataset, Evaluations, and Models",
+    description: "Daniel S. Levine*, Muhammed Shuaibi*, Evan Walter Clark Spotte-Smith, Michael G. Taylor, Muhammad R. Hasyim, Kyle Michel, Ilyes Batatia, Gábor Csányi, Misko Dzamba, Peter Eastman, Nathan C. Frey, Xiang Fu, Vahe Gharakhanyan, Aditi S. Krishnapriyan, Joshua A. Rackers, Sanjeev Raja, Ammar Rizvi, Andrew S. Rosen, Zachary Ulissi, Santiago Vargas, C. Lawrence Zitnick, Samuel M. Blau, Brandon M. Wood",
+    skills: [
+	    { name: "Dataset", url: "https://huggingface.co/facebook/OMol25" },
+    ],
+    link: "https://arxiv.org/abs/2505.08762",
   },
 ];
 
-export default function Projects() {
+export default function Publications() {
   return (
     <section id="projects" className="scroll-mt-16 lg:mt-16">
-      Publications
+    <div className="text-2xl font-medium mb-4">Publications</div>
       <>
-        {jobProjects.map((project, index) => (
+        {selPublications.map((project, index) => (
           <a
             key={index}
             href={project.link}
@@ -56,12 +60,19 @@ export default function Projects() {
                   {project.title}{" "}
                   <MoveUpRight className="ml-1 inline-block h-5 w-5 shrink-0 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 motion-reduce:transition-none" />
                 </p>
-                <CardDescription className="py-3 text-muted-foreground">
+                <CardDescription className="py-3 text-muted-foreground text-xs">
                   {project.description}
                 </CardDescription>
                 <CardFooter className="p-0 flex flex-wrap gap-2">
                   {project.skills.map((skill, index) => (
-                    <Badge key={index}>{skill}</Badge>
+                    <a
+                      key={index}
+                      href={skill.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <Badge>{skill.name}</Badge>
+                    </a>
                   ))}
                 </CardFooter>
               </CardContent>
