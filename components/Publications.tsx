@@ -33,8 +33,8 @@ const selPublications = [
 
 export default function Publications() {
   return (
-    <section id="projects" className="scroll-mt-16 lg:mt-16">
-    <div className="text-2xl font-medium mb-4">Publications</div>
+    <section id="publications" className="scroll-mt-16 lg:mt-16">
+    <div className="text-2xl font-medium mb-2">Publications</div>
       <>
         {selPublications.map((project, index) => (
           <a
@@ -65,14 +65,12 @@ export default function Publications() {
                 </CardDescription>
                 <CardFooter className="p-0 flex flex-wrap gap-2">
                   {project.skills.map((skill, index) => (
-                    <a
-                      key={index}
-                      href={skill.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Badge>{skill.name}</Badge>
-                    </a>
+		    <Badge
+		      key={index}
+		      href={skill.url}
+		    >
+		      {skill.name}
+		    </Badge>
                   ))}
                 </CardFooter>
               </CardContent>
