@@ -18,6 +18,7 @@ const jobPositions = [
     previousPositions: [""],
     description:
       "Establishing and leading the design team for a Stealth AI Startup set to bring the New Era of Money. My role involves founding and leading the design team, setting the vision and standards for design excellence, direct branding and actively contributing to hands-on product design for going to market.",
+    code: ["test"],
     skills: [
       "Brand Identity",
       "Product Design",

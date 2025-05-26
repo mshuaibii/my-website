@@ -15,14 +15,14 @@ const jobProjects = [
     imagePath: "/OMol25.png",
     title: "The Open Molecules 2025 (OMol25) Dataset, Evaluations, and Models",
     description: "",
-    skills: [],
-    links: "",
+    skills: ["Paper", "Code"],
+    link: "https://arxiv.org/abs/2505.08762",
   },
   {
     imagePath: "/UMA.png",
     title: "UMA: A Family of Universal Models for Atoms",
     description: "",
-    skills: [],
+    skills: ["Paper", "Code"],
     link: "",
   },
 ];
