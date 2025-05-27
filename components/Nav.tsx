@@ -48,7 +48,7 @@ export default function Nav() {
       <div className="flex flex-col gap-0">
         <div className="w-full flex lg:items-center lg:justify-start">
           <Avatar className="w-48 lg:w-64 h-auto border-2 border-primary bg-secondary">
-            <AvatarImage src="./headshot.png" />
+            <AvatarImage src="./headshot.jpg" />
           </Avatar>
         </div>
         <h1 className="text-[42px] font-bold lg:text-start text-primary">

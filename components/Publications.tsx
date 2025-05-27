@@ -12,11 +12,10 @@ import { MoveUpRight } from "lucide-react";
 
 const selPublications = [
   {
-    imagePath: "/UMA.png",
+    imagePath: "/UMA_min.png",
     title: "UMA: A Family of Universal Models for Atoms",
     description: "Brandon M Wood*, Misko Dzamba*, Xiang Fu*, Meng Gao*, Muhammed Shuaibi*, Luis Barroso Luque, Kareem Abdelmaqsoud, Vahe Gharakhanyan, John R Kitchin, Daniel S Levine, Kyle Michel, Anuroop Sriram, Taco Cohen, Abhishek Das, Ammar Rizvi, Sushree Jagriti Sahoo, Zachary W Ulissi, C Lawrence Zitnick",
     skills: [
-	    { name: "Models", url: "https://huggingface.co/facebook/UMA" }
     ],
     link: "https://ai.meta.com/research/publications/uma-a-family-of-universal-models-for-atoms/",
   },
@@ -25,16 +24,41 @@ const selPublications = [
     title: "The Open Molecules 2025 (OMol25) Dataset, Evaluations, and Models",
     description: "Daniel S. Levine*, Muhammed Shuaibi*, Evan Walter Clark Spotte-Smith, Michael G. Taylor, Muhammad R. Hasyim, Kyle Michel, Ilyes Batatia, Gábor Csányi, Misko Dzamba, Peter Eastman, Nathan C. Frey, Xiang Fu, Vahe Gharakhanyan, Aditi S. Krishnapriyan, Joshua A. Rackers, Sanjeev Raja, Ammar Rizvi, Andrew S. Rosen, Zachary Ulissi, Santiago Vargas, C. Lawrence Zitnick, Samuel M. Blau, Brandon M. Wood",
     skills: [
-	    { name: "Dataset", url: "https://huggingface.co/facebook/OMol25" },
     ],
     link: "https://arxiv.org/abs/2505.08762",
   },
+  {
+    imagePath: "/OMat24.png",
+    title: "",
+    description: "",
+    skills: [
+    ],
+    link: "",
+  },
+  {
+    imagePath: "/ocx24_min.png",
+    title: "",
+    description: "",
+    skills: [
+    ],
+    link: "",
+  },
+  {
+    imagePath: "/NEB_TS.png",
+    title: "",
+    description: "",
+    skills: [
+    ],
+    link: "",
+  },
+
 ];
 
 export default function Publications() {
   return (
     <section id="publications" className="scroll-mt-16 lg:mt-16">
-    <div className="text-2xl font-medium mb-2">Publications</div>
+    <div className="text-2xl font-medium mb-0">Research</div>
+    <div className="text-l font-medium mb-2">(Selected Publications)</div>
       <>
         {selPublications.map((project, index) => (
           <a
