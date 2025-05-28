@@ -5,7 +5,6 @@ import ExpCard from "@/components/ExpCards";
 import Publications from "@/components/Publications";
 import Bio from "@/components/Bio";
 import Contact from "@/components/Contact";
-import Footer from "@/components/Footer";
 import { useEffect, useRef } from "react";
 import { Inter } from "next/font/google";
 
@@ -41,12 +40,11 @@ export default function Home() {
         <div ref={auraRef} className="mouse-aura" />
         <div className="lg:flex lg:justify-between lg:gap-4">
           <Nav />
-          <main className="flex flex-col pt-6 lg:pt-24 lg:w-1/2 lg:py-24 gap-4">
+          <main className="flex flex-col pt-6 lg:pt-24 lg:w-1/2 lg:py-24 gap-8">
 	    <Bio />
             <Publications />
             <ExpCard />
             <Contact />
-            <Footer />
           </main>
         </div>
       </div>

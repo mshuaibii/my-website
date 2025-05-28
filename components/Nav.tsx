@@ -21,7 +21,7 @@ export default function Nav() {
 
   const navItems: NavItem[] = [
     { name: "Bio", href: "#bio" },
-    { name: "Publications", href: "#publications" },
+    { name: "Research", href: "#publications" },
     { name: "Eperience", href: "#experience" },
     { name: "Contact", href: "#contact" },
   ];
@@ -58,15 +58,6 @@ export default function Nav() {
 	  Research Engineer, FAIR at Meta
         </h2>
       <ul className="flex flex-row gap-2 mt-5">
-        <Button variant="outline" size="icon">
-          <a
-            href="https://scholar.google.com/citations?user=lphfYeIAAAAJ&hl=en&oi=ao"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaGoogleScholar className="h-[1.2rem] w-[1.2rem]" />
-          </a>
-        </Button>
 	<Button variant="outline" size="icon">
           <a
             href="https://github.com/mshuaibii"
@@ -85,7 +76,15 @@ export default function Nav() {
             <Twitter className="h-[1.2rem] w-[1.2rem]" />
           </a>
         </Button>
-
+	<Button variant="outline" size="icon">
+          <a
+            href="https://scholar.google.com/citations?user=lphfYeIAAAAJ&hl=en&oi=ao"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaGoogleScholar className="h-[1.2rem] w-[1.2rem]" />
+          </a>
+        </Button>
         <Button variant="outline" size="icon">
           <a
             href="https://linkedin.com/in/mshuaibii"

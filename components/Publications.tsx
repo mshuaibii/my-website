@@ -14,43 +14,76 @@ const selPublications = [
   {
     imagePath: "/UMA_min.png",
     title: "UMA: A Family of Universal Models for Atoms",
-    description: "Brandon M Wood*, Misko Dzamba*, Xiang Fu*, Meng Gao*, Muhammed Shuaibi*, Luis Barroso Luque, Kareem Abdelmaqsoud, Vahe Gharakhanyan, John R Kitchin, Daniel S Levine, Kyle Michel, Anuroop Sriram, Taco Cohen, Abhishek Das, Ammar Rizvi, Sushree Jagriti Sahoo, Zachary W Ulissi, C Lawrence Zitnick",
+    authors: "Brandon M Wood*, Misko Dzamba*, Xiang Fu*, Meng Gao*, Muhammed Shuaibi*, Luis Barroso Luque, Kareem Abdelmaqsoud, Vahe Gharakhanyan, John R Kitchin, Daniel S Levine, Kyle Michel, Anuroop Sriram, Taco Cohen, Abhishek Das, Ammar Rizvi, Sushree Jagriti Sahoo, Zachary W Ulissi, C Lawrence Zitnick",
     skills: [
     ],
     link: "https://ai.meta.com/research/publications/uma-a-family-of-universal-models-for-atoms/",
+    journal: "Preprint 2025",
   },
   {
     imagePath: "/OMol25.png",
     title: "The Open Molecules 2025 (OMol25) Dataset, Evaluations, and Models",
-    description: "Daniel S. Levine*, Muhammed Shuaibi*, Evan Walter Clark Spotte-Smith, Michael G. Taylor, Muhammad R. Hasyim, Kyle Michel, Ilyes Batatia, Gábor Csányi, Misko Dzamba, Peter Eastman, Nathan C. Frey, Xiang Fu, Vahe Gharakhanyan, Aditi S. Krishnapriyan, Joshua A. Rackers, Sanjeev Raja, Ammar Rizvi, Andrew S. Rosen, Zachary Ulissi, Santiago Vargas, C. Lawrence Zitnick, Samuel M. Blau, Brandon M. Wood",
+    authors: "Daniel S. Levine*, Muhammed Shuaibi*, Evan Walter Clark Spotte-Smith, Michael G. Taylor, Muhammad R. Hasyim, Kyle Michel, Ilyes Batatia, Gábor Csányi, Misko Dzamba, Peter Eastman, Nathan C. Frey, Xiang Fu, Vahe Gharakhanyan, Aditi S. Krishnapriyan, Joshua A. Rackers, Sanjeev Raja, Ammar Rizvi, Andrew S. Rosen, Zachary Ulissi, Santiago Vargas, C. Lawrence Zitnick, Samuel M. Blau, Brandon M. Wood",
     skills: [
     ],
     link: "https://arxiv.org/abs/2505.08762",
-  },
-  {
-    imagePath: "/OMat24.png",
-    title: "",
-    description: "",
-    skills: [
-    ],
-    link: "",
-  },
-  {
-    imagePath: "/ocx24_min.png",
-    title: "",
-    description: "",
-    skills: [
-    ],
-    link: "",
+    journal: "Preprint 2025",
   },
   {
     imagePath: "/NEB_TS.png",
-    title: "",
-    description: "",
+    title: "CatTSunami: Accelerating Transition State Energy Calculations with Pretrained Graph Neural Networks",
+    authors: "Brook Wander, Muhammed Shuaibi, John R. Kitchin, Zachary W. Ulissi, C. Lawrence Zitnick",
     skills: [
     ],
-    link: "",
+    link: "https://pubs.acs.org/doi/10.1021/acscatal.4c04272",
+    journal: "ACS Catalysis 2025"
   },
+  {
+    imagePath: "/OMat24.png",
+    title: "Open Materials 2024 (OMat24) Inorganic Materials Dataset and Models",
+    authors: "Luis Barroso-Luque, Muhammed Shuaibi, Xiang Fu, Brandon M. Wood, Misko Dzamba, Meng Gao, Ammar Rizvi, C. Lawrence Zitnick, Zachary W. Ulissi",
+    skills: [
+    ],
+    link: "https://arxiv.org/abs/2410.12771",
+    journal: "Preprint 2024",
+  },
+  {
+    imagePath: "/ocx24_min.png",
+    title: "Open Catalyst Experiments 2024 (OCx24): Bridging Experiments and Computational Models)",
+    authors: "Jehad Abed*, Jiheon Kim*, Muhammed Shuaibi*, Brook Wander*, Boris Duijf, Suhas Mahesh, Hyeonseok Lee, Vahe Gharakhanyan, Sjoerd Hoogland, Erdem Irtem, Janice Lan, Niels Schouten, Anagha Usha Vijayakumar, Jason Hattrick-Simpers, John R. Kitchin, Zachary W. Ulissi, Aaike van Vugt, Edward H. Sargent, David Sinton, C. Lawrence Zitnick",
+    skills: [
+    ],
+    link: "https://arxiv.org/abs/2411.11783",
+    journal: "Preprint 2024",
+  },
+  {
+    imagePath: "/adsorbml_min.png",
+    title: "AdsorbML: A Leap in Efficiency for Adsorption Energy Calculations using Generalizable Machine Learning Potentials",
+    authors: "Janice Lan*, Aini Palizhati*, Muhammed Shuaibi*, Brandon M. Wood*, Brook Wander, Abhishek Das, Matt Uyttendaele, C. Lawrence Zitnick, Zachary W. Ulissi",
+    skills: [
+    ],
+    link: "https://www.nature.com/articles/s41524-023-01121-5",
+    journal: "npj Comput. Mater. 2023"
+  },
+  {
+    imagePath: "/OC22.png",
+    title: "The Open Catalyst 2022 (OC22) Dataset and Challenges for Oxide Electrocatalysts",
+    authors: "Richard Tran*, Janice Lan*, Muhammed Shuaibi*, Brandon M. Wood*, Siddharth Goyal*, Abhishek Das, Javier Heras-Domingo, Adeesh Kolluru, Ammar Rizvi, Nima Shoghi, Anuroop Sriram, Felix Therrien, Jehad Abed, Oleksandr Voznyy, Edward H. Sargent, Zachary Ulissi, C. Lawrence Zitnick",
+    skills: [
+    ],
+    link: "https://arxiv.org/abs/2206.08917",
+    journal: "ACS Catalysis 2023"
+  },
+  {
+    imagePath: "/OC20.jpg",
+    title: "The Open Catalyst 2020 (OC20) Dataset and Community Challenges)",
+    authors: "Lowik Chanussot*, Abhishek Das*, Siddharth Goyal*, Thibaut Lavril*, Muhammed Shuaibi*, Morgane Riviere, Kevin Tran, Javier Heras-Domingo, Caleb Ho, Weihua Hu, Aini Palizhati, Anuroop Sriram, Brandon Wood, Junwoong Yoon, Devi Parikh, C. Lawrence Zitnick, Zachary Ulissi",
+    skills: [
+    ],
+    link: "https://arxiv.org/abs/2010.09990",
+    journal: "ACS Catalysis 2021",
+  },
+
 
 ];
 
@@ -85,7 +118,10 @@ export default function Publications() {
                   <MoveUpRight className="ml-1 inline-block h-5 w-5 shrink-0 transition-transform group-hover:-translate-y-1 group-hover:translate-x-1 motion-reduce:transition-none" />
                 </p>
                 <CardDescription className="py-3 text-muted-foreground text-xs">
-                  {project.description}
+                  {project.authors}
+                </CardDescription>
+		<CardDescription className="py-3 text-muted-foreground text-xs font-bold">
+                  {project.journal}
                 </CardDescription>
                 <CardFooter className="p-0 flex flex-wrap gap-2">
                   {project.skills.map((skill, index) => (
