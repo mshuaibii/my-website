@@ -7,7 +7,6 @@ import {
   CardFooter,
   CardHeader,
 } from "@/components/ui/card";
-import { Badge } from "@/components/ui/badge";
 import { MoveUpRight } from "lucide-react";
 
 const selPublications = [
