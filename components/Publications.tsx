@@ -133,16 +133,6 @@ export default function Publications() {
 		<CardDescription className="py-3 text-muted-foreground text-xs font-bold">
                   {project.journal}
                 </CardDescription>
-                <CardFooter className="p-0 flex flex-wrap gap-2">
-                  {project.skills.map((skill, index) => (
-		    <Badge
-		      key={index}
-		      href={skill.url}
-		    >
-		      {skill.name}
-		    </Badge>
-                  ))}
-                </CardFooter>
               </CardContent>
             </Card>
           </a>
