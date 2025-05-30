@@ -39,6 +39,15 @@ const selPublications = [
     journal: "ACS Catalysis 2025"
   },
   {
+    imagePath: "/dens_min.png",
+    title: "Generalizing Denoising to Non-Equilibrium Structures Improves Equivariant Force Fields",
+    authors: "Yi-Lun Liao, Tess Smidt, Muhammed Shuaibi*, Abhishek Das*",
+    skills: [
+    ],
+    link: "https://arxiv.org/abs/2403.09549",
+    journal: "TMLR 2024"
+  },
+  {
     imagePath: "/OMat24.png",
     title: "Open Materials 2024 (OMat24) Inorganic Materials Dataset and Models",
     authors: "Luis Barroso-Luque, Muhammed Shuaibi, Xiang Fu, Brandon M. Wood, Misko Dzamba, Meng Gao, Ammar Rizvi, C. Lawrence Zitnick, Zachary W. Ulissi",

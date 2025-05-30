@@ -1,7 +1,6 @@
 "use client";
 import Head from "next/head";
 import Nav from "@/components/Nav";
-import ExpCard from "@/components/ExpCards";
 import Publications from "@/components/Publications";
 import Bio from "@/components/Bio";
 import { useEffect, useRef } from "react";
