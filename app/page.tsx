@@ -4,7 +4,6 @@ import Nav from "@/components/Nav";
 import ExpCard from "@/components/ExpCards";
 import Publications from "@/components/Publications";
 import Bio from "@/components/Bio";
-import Contact from "@/components/Contact";
 import { useEffect, useRef } from "react";
 import { Inter } from "next/font/google";
 
@@ -43,10 +42,17 @@ export default function Home() {
           <main className="flex flex-col pt-6 lg:pt-24 lg:w-1/2 lg:py-24 gap-8">
 	    <Bio />
             <Publications />
-            <ExpCard />
-            <Contact />
           </main>
         </div>
+	<footer className="text-center text-sm mt-10 mb-4">
+	  &copy; {new Date().getFullYear()} Muhammed Shuaibi. <a
+	  className="underline" 
+	  href="https://github.com/mshuaibii/my-website/blob/main/README.md#design-credits"
+	  > Design credits</a>. Deployed by <a
+	  className="underline" 
+	  href="https://vercel.com"
+	  > Vercel</a>.
+        </footer>
       </div>
     </>
   );

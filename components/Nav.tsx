@@ -1,7 +1,7 @@
 "use client";
 import { Button } from "@/components/ui/button";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Twitter, Github, Linkedin } from "lucide-react";
+import { Twitter, Github, Linkedin, Mail } from "lucide-react";
 import { ModeToggle } from "./ui/toggle-mode";
 import useActiveSection from "@/hooks/useActiveSection";
 import { FaGoogleScholar } from "react-icons/fa6";
@@ -14,20 +14,17 @@ type NavItem = {
 export default function Nav() {
   const activeSection = useActiveSection([
     "bio",
-    "experience",
-    "publications",
-    "contact",
+    "projects",
   ]);
 
   const navItems: NavItem[] = [
     { name: "Bio", href: "#bio" },
-    { name: "Research", href: "#publications" },
-    { name: "Eperience", href: "#experience" },
-    { name: "Contact", href: "#contact" },
+    { name: "Research", href: "#projects" },
   ];
 
   const getNavItemClasses = (href: string) => {
-    const isActive = activeSection === href.substring(1);
+    // TODO
+    const isActive = false
     return {
       linkClass: isActive ? "active" : "",
       indicatorClass: `nav-indicator mr-4 h-px w-8 bg-slate-600 transition-all ${
@@ -94,6 +91,15 @@ export default function Nav() {
             <Linkedin className="h-[1.2rem] w-[1.2rem]" />
           </a>
         </Button>
+	<Button variant="outline" size="icon">
+          <a
+            href="mailto:mshuaibi@meta.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Mail className="h-[1.2rem] w-[1.2rem]" />
+          </a>
+        </Button>
       </ul>
       <nav className="lg:flex hidden mt-10">
         <ul className="flex flex-col w-max text-start gap-6 uppercase text-xs font-medium">
@@ -112,6 +118,20 @@ export default function Nav() {
           })}
         </ul>
       </nav>
+	<div className="mt-20">
+	  <h2 className="text-m font-bold">News</h2>
+	  <p className="text-s">[May {"'"}25] <a 
+	  href="https://github.com/facebookresearch/fairchem" 
+	  target="_blank" 
+	  className="underline">
+	  fairchem-core{">"}2.0.0</a>{" "} 
+	  is now live on pypi.</p>
+	  <p className="text-s">[May {"'"}25] We released <a 
+	  href="https://ai.meta.com/blog/meta-fair-science-new-open-source-releases/"
+	  target="_blank" 
+	  className="underline">UMA and OMol25.</a>
+	  </p>
+	</div>
       </div>
     </header>
   );

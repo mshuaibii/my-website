@@ -66,7 +66,7 @@ const selPublications = [
     journal: "npj Comput. Mater. 2023"
   },
   {
-    imagePath: "/OC22.png",
+    imagePath: "/oc22_min.png",
     title: "The Open Catalyst 2022 (OC22) Dataset and Challenges for Oxide Electrocatalysts",
     authors: "Richard Tran*, Janice Lan*, Muhammed Shuaibi*, Brandon M. Wood*, Siddharth Goyal*, Abhishek Das, Javier Heras-Domingo, Adeesh Kolluru, Ammar Rizvi, Nima Shoghi, Anuroop Sriram, Felix Therrien, Jehad Abed, Oleksandr Voznyy, Edward H. Sargent, Zachary Ulissi, C. Lawrence Zitnick",
     skills: [
@@ -87,9 +87,10 @@ const selPublications = [
 
 ];
 
+
 export default function Publications() {
   return (
-    <section id="publications" className="scroll-mt-16 lg:mt-16">
+    <section id="projects" className="scroll-mt-16 lg:mt-16">
     <div className="text-2xl font-medium mb-0">Research</div>
     <div className="text-l font-medium mb-2">(Selected Publications)</div>
       <>

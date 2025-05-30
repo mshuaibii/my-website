@@ -7,7 +7,10 @@ export default function Bio() {
       <div className="text-2xl font-medium mb-2">Bio</div>
       <div className="flex flex-col gap-4">
         <p className="text-start text-muted-foreground lg:px-6">
-	I am a Research Engineer on the FAIR Chemistry team. My research focuses on the development of datasets, models, and frameworks to help address broad challenges in molecules and materials discovery. Before that, I completed my PhD in Chemical Engineering with Zachary Ulissi.
+	I am a Research Engineer on the FAIR Chemistry team. My current research focuses on deep learning applications to addressing broad challenges in molecules and materials discovery. Building open datasets, frameworks, and tools to accelerate community research is something I am particularly fond of. Before that, I completed my PhD in Chemical Engineering with Zachary W. Ulissi.
+        </p>
+	<p className="text-start text-muted-foreground lg:px-6">
+	Feel free to get in touch: mshuaibi@meta.com
         </p>
       </div>
     </section>
