@@ -120,6 +120,11 @@ export default function Nav() {
       </nav>
 	<div className="mt-20">
 	  <h2 className="text-m font-bold">News</h2>
+	  <p className="text-s">[Sep {"'"}25] We released <a 
+	  href="https://huggingface.co/facebook/OC25"
+	  target="_blank" 
+	  className="underline">OC25.</a>
+	  </p>
 	  <p className="text-s">[May {"'"}25] <a 
 	  href="https://github.com/facebookresearch/fairchem" 
 	  target="_blank" 

@@ -11,6 +11,14 @@ import { MoveUpRight } from "lucide-react";
 
 const selPublications = [
   {
+    imagePath: "/OC25.png",
+    title: "The Open Catalyst 2025 (OC25) Dataset and Models for Solid-Liquid Interfaces",
+    authors: "Sushree Jagriti Sahoo, Mikael Maraschin, Daniel S. Levine, Zachary Ulissi, C. Lawrence Zitnick, Joel B Varley, Joseph A. Gauthier, Nitish Govindarajan, Muhammed Shuaibi",
+    skills: [],
+    link: "https://arxiv.org/abs/2509.17862",
+    journal: "Preprint 2025",
+  },
+  {
     imagePath: "/UMA_min.png",
     title: "UMA: A Family of Universal Models for Atoms",
     authors: "Brandon M Wood*, Misko Dzamba*, Xiang Fu*, Meng Gao*, Muhammed Shuaibi*, Luis Barroso Luque, Kareem Abdelmaqsoud, Vahe Gharakhanyan, John R Kitchin, Daniel S Levine, Kyle Michel, Anuroop Sriram, Taco Cohen, Abhishek Das, Ammar Rizvi, Sushree Jagriti Sahoo, Zachary W Ulissi, C Lawrence Zitnick",
