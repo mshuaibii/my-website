@@ -1,2 +1,9 @@
-compatibility_flags = [ "nodejs_compat" ]
-compatibility_date = "2024-09-23"
+name = "mshuaibi"
+compatibility_date = "2024-09-10"
+
+# 👇 This is required for Cloudflare Pages builds
+pages_build_output_dir = ".vercel/output/static"
+
+# Optional: If you use Next.js Functions (like API routes)
+[build]
+command = "npx @cloudflare/next-on-pages@latest"
