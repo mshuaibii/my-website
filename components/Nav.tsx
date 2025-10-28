@@ -93,7 +93,7 @@ export default function Nav() {
         </Button>
 	<Button variant="outline" size="icon">
           <a
-            href="mailto:mshuaibi@meta.com"
+            href="mailto:mushuaibi@gmail.com"
             target="_blank"
             rel="noopener noreferrer"
           >
